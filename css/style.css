@@ -1,0 +1,220 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+/*-------------------- header nav start ----------------*/
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+header.sticky{
+    background: #43637a;
+    padding: 15px 100px;
+}
+header .brand{
+    color: #302b2b;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a{
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+header .menu a:hover{
+    color: #000;
+    background-color: #b1b0b0;
+}
+header .btn{
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1060px){
+    header .btn{
+        display: block;
+    }
+
+    header .menu{
+        position: fixed;
+        background: goldenrod;
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+    header .menu.active{
+        right: 0;
+
+    }
+    header .menu .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+    header .menu a{
+        display: block;
+        font-size: 15px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+
+}
+/*-------------------- header nav end ----------------*/
+
+/*-------------------- header section start ----------*/
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+
+.header-section-main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header-section-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-section .heading{
+    margin-top: 250px;
+}
+.rakib-color{
+    color: #DF5646;
+}
+.header-section h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.header-section h3{
+    font-size: 20px;
+    color: #304b61;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.header-section .header-section-img{
+    margin-top: 150px;
+}
+.header-section a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #DF5646;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.header-section a:hover{
+    background-color: #302b2b;
+}
+.header-section i{
+    margin-left: 10px;
+    font-size: 15px;
+    opacity: 80%;
+}
+/* responsive start */
+
+@media (max-width: 1060px){
+    .header-section .heading{
+        margin-top: 210px;
+    }
+    .header-section h1{
+        font-size: 45px;
+        margin-left: 98px;
+    }
+    .header-section h3{
+        margin-left: 98px;
+    }
+    .header-section a{
+        margin-left: 98px;
+    }
+    .header-section img{
+        width: 500px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .header-section .heading{
+        margin-top: 180px;
+    }
+    .header-section h1{
+        font-size: 16px; 
+    }
+    .header-section img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .header-section h3{
+        font-size: 10px;
+    }
+    .header-section a{
+        margin-left: 98px;
+        padding: 10px 15px;
+        font-size: 10px;
+        
+    }
+    
+}
+
+/* responsive end */
+/*-------------------- header section end ----------------*/
+
+
+
+
+
+
+
+
+
+
+
+.deckjjjjj{
+    height: 500px;
+}
+
