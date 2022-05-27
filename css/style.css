@@ -13,6 +13,9 @@
 body{
     min-height: 100vh;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*-------------------- header nav start ----------------*/
 header{
     z-index: 999;
@@ -23,7 +26,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     padding: 20px 100px;
     transition: 0.6s;
 }
@@ -198,23 +201,239 @@ header .btn{
         font-size: 10px;
         
     }
-    
 }
-
 /* responsive end */
 /*-------------------- header section end ----------------*/
 
-
-
-
-
-
-
-
-
-
-
-.deckjjjjj{
-    height: 500px;
+/*-------------------- services section start ------------*/
+.servics-section{
+    height: 750px;
+    background-color: #F9FAFB;
 }
+.servics-section h1{
+    color: #DF5646;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px; 
+    padding-bottom: 60px;
+}
+.servics-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.servics-heading-row h2{
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.servics-color{
+    color: #DF5646;
+}
+.servics-hr{
+    height: 30px;
+    width: 3px;
+    background-color: #cfcdcd;
+    position: absolute;
+    margin-top: 99px;
+    margin-left: 260px;
+}
+.servics-heading-row p{
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.servics-icon .arrow-icon{
+    background-color: #78ADD9;
+    color: #ffff;
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.servics-icon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.servics-icon{
+    margin-bottom: 20px;
+}
+.icon-row{
+    display: grid;
+    grid-template-columns: 55px auto auto;
+}
+.icon-row h4{
+    color: #1D2043;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.icon-row .arrow-right-icon{
+    margin-top: 20px;
+    color: gray;
+    font-size: 15px;
+    opacity: 60%;
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+/*-------------------- services section end --------------*/
+
+/*-------------------- Skills section start --------------*/
+
+.skills-section{
+    height: 800px;
+}
+.skills-section h1{
+    color: #DF5646;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.skills-row{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+.skill-heading h2{
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #1D2043;
+    font-weight: 500;
+}
+.skill-heading p{
+    color: #00000099;
+}
+.my-skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.html-skill{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    margin-top: 50px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.my-skills h3{
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+    font-weight: 500;
+    cursor: pointer;
+}
+.my-skills h4{
+    margin-left: 13px;
+    color: #DF5646;
+    font-size: 18px;
+    
+}
+/*-------------------- Skills section end ----------------*/
+
+/*-------------------- portfolio section start -----------*/
+
+.portfolio-section{
+    height: 800px;
+    background-color: darkgray;
+}
+.portfolio-section h1{
+    color: #DF5646;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.portfolio-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.portfolio-row p{
+    font-size: 16px;
+    padding-top: 20px;
+    color: #00000099;
+    margin-bottom: 80px;
+}
+.portfolio-row a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #DF5646;
+    
+}
+.portfolio-row i{
+    margin-left: 5px;
+    opacity: 50%;
+}
+.portfolio-color{
+    color: #DF5646;
+}
+.portfolio-hr{
+    height: 50px;
+    width: 2px;
+    margin-left: 80%;
+    background-color: gray;
+}
+.portfolio-experience{
+    margin-top: 30px;
+}
+.portfolio-experience h2{
+    font-size: 45px;
+    color: #DF5646;
+    font-weight: 500;
+}
+.portfolio-experience h4{
+    font-size: 16px;
+    color: #1D2043;
+    line-height: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+.portfolio-row h2{
+    position: absolute;
+    font-size: 30px;
+    color: #1D2043;
+    font-weight: 600;
+}
+.portfolio-experience{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.experience-row{
+    display: flex;
+}
+
+/* image slider */
+
+
+
+
+/*-------------------- portfolio section end -------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
