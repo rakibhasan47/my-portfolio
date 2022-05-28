@@ -321,7 +321,7 @@ header .btn{
     border-radius: 50%;
 }
 .my-skills h3{
-    margin-left: 15px;
+    margin-left: 20px;
     position: absolute;
     margin-top: 20px;
     font-size: 20px;
@@ -333,15 +333,13 @@ header .btn{
     margin-left: 13px;
     color: #DF5646;
     font-size: 18px;
-    
 }
 /*-------------------- Skills section end ----------------*/
 
 /*-------------------- portfolio section start -----------*/
 
 .portfolio-section{
-    height: 800px;
-    background-color: darkgray;
+    height: 850px;
 }
 .portfolio-section h1{
     color: #DF5646;
@@ -409,17 +407,103 @@ header .btn{
 .experience-row{
     display: flex;
 }
+.website-templates{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 70px;
+}
+.website-templates img{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 260px;
+    border-radius: 5px;
+}
 
-/* image slider */
-
-
-
-
+.img-1 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.img-1:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 /*-------------------- portfolio section end -------------*/
 
 
+/*-------------------- Qualification section start -------*/
+.qualification-section{
+    height: 1000px;
+    background-color: #F9FAFB;
+}
+.qualification-heading h1{
+    color: #DF5646;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.qualification-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.qualification-row h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-left: 50px;
+    color: #1D2043;
+}
+.my-education{
+    padding-top: 25px;
+}
+.my-education{
+    display: grid;
+    grid-template-columns: 120px 20px 380px;
+}
+.education-p p{
+    font-size: 14px;
+    padding-top: 40px ;
+    color: rgba(0,0,0,0.6);
+}
+.education-hr{
+    height: 260px;
+    width: 1px;
+    background-color: #e0d8d8;
+}
+.education-h5-h4-p h5{
+    font-size: 18px;
+    color: #DF5646;
+    padding-top: 35px;
+    font-weight: 500;
+}
+.education-h5-h4-p .behance-color{
+    color: #1f44ff;
+}
+.education-h5-h4-p .dribble-color{
+    color: #f012be;
+}
+.education-h5-h4-p h4{
+    font-size: 20px;
+    color: #1D2043;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.education-h5-h4-p p{
+    font-size: 15px;
+    color: #78ADD9 ;
+    font-weight: 400;
+    padding-bottom: 30px;
+    
+}
+.education-h5-h4-p small{
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    
+}
 
-
+/*-------------------- Qualification section end ---------*/
 
 
 
