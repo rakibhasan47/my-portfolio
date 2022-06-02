@@ -1,23 +1,23 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /*-------------------- header nav start ----------------*/
-header{
+header {
     z-index: 999;
     position: fixed;
     top: 0;
@@ -30,54 +30,60 @@ header{
     padding: 20px 100px;
     transition: 0.6s;
 }
-header.sticky{
-    background: #43637a;
+
+header.sticky {
+    /* background: #43637a; */
+    background: #DF5646;
     padding: 15px 100px;
 }
-header .brand{
-    color: #302b2b;
+
+header .brand {
+    color: white;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-header .menu{
+
+header .menu {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header .menu a{
+header .menu a {
     font-size: 15px;
     font-weight: 500;
     text-decoration: none;
-    color: #000;
+    color: white;
     margin: 0 15px;
     padding: 5px 15px;
     border-radius: 5px;
     transition: 0.6s;
 }
-header .menu a:hover{
+
+header .menu a:hover {
     color: #000;
-    background-color: #b1b0b0;
+    background-color: #fff;
 }
-header .btn{
+
+header .btn {
     color: #000;
     font-size: 25px;
     cursor: pointer;
     display: none;
 }
 
-@media (max-width: 1060px){
-    header .btn{
+@media (max-width: 1060px) {
+    header .btn {
         display: block;
     }
 
-    header .menu{
+    header .menu {
         position: fixed;
-        background: goldenrod;
+        background: #DF5646;
         flex-direction: column;
         min-width: 400px;
         height: 100vh;
@@ -87,151 +93,184 @@ header .btn{
         transition: 0.5s;
         transition-property: right;
     }
-    header .menu.active{
+
+    header .menu.active {
         right: 0;
 
     }
-    header .menu .close-btn{
+
+    header .menu .close-btn {
         position: absolute;
         top: 0;
         left: 0;
         margin: 25px;
     }
-    header .menu a{
+
+    header .menu a {
         display: block;
         font-size: 15px;
         margin: 20px;
-        padding: 0 15px;
+        padding: 5px 15px;
     }
 
 }
+
 /*-------------------- header nav end ----------------*/
 
 /*-------------------- header section start ----------*/
-.container{
+.header-section {
+    background-color: #0A183D;
+}
+
+.container {
     max-width: 1150px;
     margin: auto;
 }
 
-.header-section-main{
+.header-section-main {
     position: relative;
     width: 100%;
     min-height: 100vh;
 }
 
-.header-section-row{
+.header-section-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.header-section .heading{
+
+.header-section .heading {
     margin-top: 250px;
 }
-.rakib-color{
+
+.rakib-color {
     color: #DF5646;
 }
-.header-section h1{
+
+.header-section h1 {
+    color: #ffff;
     font-size: 50px;
     font-weight: 600;
 }
-.header-section h3{
+
+.header-section h3 {
     font-size: 20px;
-    color: #304b61;
+    color: #dbd2d2;
     font-weight: 600;
     margin-bottom: 40px;
 }
-.header-section .header-section-img{
+
+.header-section .header-section-img {
     margin-top: 150px;
 }
-.header-section a{
+
+.header-section a {
     text-decoration: none;
     color: #fff;
     background-color: #DF5646;
     padding: 10px 25px;
     font-size: 16px;
     border-radius: 5px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
-.header-section a:hover{
-    background-color: #302b2b;
+
+.header-section a:hover {
+    background-color: transparent;
+    border: 2px solid #DF5646;
 }
-.header-section i{
+
+.header-section i {
     margin-left: 10px;
     font-size: 15px;
     opacity: 80%;
 }
+
 /* responsive start */
 
-@media (max-width: 1060px){
-    .header-section .heading{
+@media (max-width: 1060px) {
+    .header-section .heading {
         margin-top: 210px;
     }
-    .header-section h1{
+
+    .header-section h1 {
         font-size: 45px;
         margin-left: 98px;
     }
-    .header-section h3{
+
+    .header-section h3 {
         margin-left: 98px;
     }
-    .header-section a{
+
+    .header-section a {
         margin-left: 98px;
     }
-    .header-section img{
+
+    .header-section img {
         width: 500px;
         margin-right: 50px;
     }
 }
 
-@media (max-width: 768px){
-    .header-section .heading{
+@media (max-width: 768px) {
+    .header-section .heading {
         margin-top: 180px;
     }
-    .header-section h1{
-        font-size: 16px; 
+
+    .header-section h1 {
+        font-size: 16px;
     }
-    .header-section img{
+
+    .header-section img {
         width: 200px;
         margin-top: 20px;
     }
-    .header-section h3{
+
+    .header-section h3 {
         font-size: 10px;
     }
-    .header-section a{
+
+    .header-section a {
         margin-left: 98px;
         padding: 10px 15px;
         font-size: 10px;
-        
+
     }
 }
+
 /* responsive end */
 /*-------------------- header section end ----------------*/
 
 /*-------------------- services section start ------------*/
-.servics-section{
+.servics-section {
     height: 750px;
     background-color: #F9FAFB;
 }
-.servics-section h1{
+
+.servics-section h1 {
     color: #DF5646;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
-    padding-top: 100px; 
+    padding-top: 100px;
     padding-bottom: 60px;
 }
-.servics-box{
+
+.servics-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.servics-heading-row h2{
+
+.servics-heading-row h2 {
     font-size: 28px;
     margin-top: 50px;
     margin-bottom: 20px;
     font-weight: 600;
 }
-.servics-color{
+
+.servics-color {
     color: #DF5646;
 }
-.servics-hr{
+
+.servics-hr {
     height: 30px;
     width: 3px;
     background-color: #cfcdcd;
@@ -239,12 +278,14 @@ header .btn{
     margin-top: 99px;
     margin-left: 260px;
 }
-.servics-heading-row p{
+
+.servics-heading-row p {
     color: gray;
     font-weight: 300;
     margin-bottom: 30px;
 }
-.servics-icon .arrow-icon{
+
+.servics-icon .arrow-icon {
     background-color: #78ADD9;
     color: #ffff;
     padding: 15px 20px;
@@ -252,41 +293,48 @@ header .btn{
     border-radius: 30px;
     cursor: pointer;
 }
-.servics-icon{
+
+.servics-icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.servics-icon{
+
+.servics-icon {
     margin-bottom: 20px;
 }
-.icon-row{
+
+.icon-row {
     display: grid;
     grid-template-columns: 55px auto auto;
 }
-.icon-row h4{
+
+.icon-row h4 {
     color: #1D2043;
     margin-left: 20px;
     margin-top: 15px;
     font-weight: 500;
     cursor: pointer;
 }
-.icon-row .arrow-right-icon{
+
+.icon-row .arrow-right-icon {
     margin-top: 20px;
     color: gray;
     font-size: 15px;
     opacity: 60%;
     margin-left: 30px;
     cursor: pointer;
-    
+
 }
+
 /*-------------------- services section end --------------*/
 
 /*-------------------- Skills section start --------------*/
 
-.skills-section{
+.skills-section {
     height: 800px;
 }
-.skills-section h1{
+
+.skills-section h1 {
     color: #DF5646;
     font-size: 35px;
     text-align: center;
@@ -294,33 +342,39 @@ header .btn{
     padding-top: 100px;
     padding-bottom: 80px;
 }
-.skills-row{
+
+.skills-row {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
 }
-.skill-heading h2{
+
+.skill-heading h2 {
     font-size: 30px;
     margin-top: 70px;
     margin-bottom: 20px;
     color: #1D2043;
     font-weight: 500;
 }
-.skill-heading p{
+
+.skill-heading p {
     color: #00000099;
 }
-.my-skills{
+
+.my-skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.html-skill{
+
+.html-skill {
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     margin-top: 50px;
     height: 70px;
     width: 70px;
     border-radius: 50%;
 }
-.my-skills h3{
+
+.my-skills h3 {
     margin-left: 20px;
     position: absolute;
     margin-top: 20px;
@@ -329,19 +383,22 @@ header .btn{
     font-weight: 500;
     cursor: pointer;
 }
-.my-skills h4{
+
+.my-skills h4 {
     margin-left: 13px;
     color: #DF5646;
     font-size: 18px;
 }
+
 /*-------------------- Skills section end ----------------*/
 
 /*-------------------- portfolio section start -----------*/
 
-.portfolio-section{
+.portfolio-section {
     height: 850px;
 }
-.portfolio-section h1{
+
+.portfolio-section h1 {
     color: #DF5646;
     font-size: 35px;
     text-align: center;
@@ -349,44 +406,53 @@ header .btn{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.portfolio-box{
+
+.portfolio-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.portfolio-row p{
+
+.portfolio-row p {
     font-size: 16px;
     padding-top: 20px;
     color: #00000099;
     margin-bottom: 80px;
 }
-.portfolio-row a{
+
+.portfolio-row a {
     font-size: 18px;
     text-decoration: none;
     color: #DF5646;
-    
+
 }
-.portfolio-row i{
+
+.portfolio-row i {
     margin-left: 5px;
     opacity: 50%;
 }
-.portfolio-color{
+
+.portfolio-color {
     color: #DF5646;
 }
-.portfolio-hr{
+
+.portfolio-hr {
     height: 50px;
     width: 2px;
     margin-left: 80%;
     background-color: gray;
 }
-.portfolio-experience{
+
+.portfolio-experience {
     margin-top: 30px;
 }
-.portfolio-experience h2{
+
+.portfolio-experience h2 {
     font-size: 45px;
     color: #DF5646;
     font-weight: 500;
 }
-.portfolio-experience h4{
+
+.portfolio-experience h4 {
     font-size: 16px;
     color: #1D2043;
     line-height: 20px;
@@ -394,49 +460,57 @@ header .btn{
     padding-top: 10px;
     padding-left: 25px;
 }
-.portfolio-row h2{
+
+.portfolio-row h2 {
     position: absolute;
     font-size: 30px;
     color: #1D2043;
     font-weight: 600;
 }
-.portfolio-experience{
+
+.portfolio-experience {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.experience-row{
+
+.experience-row {
     display: flex;
 }
-.website-templates{
+
+.website-templates {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 70px;
 }
-.website-templates img{
+
+.website-templates img {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 260px;
     border-radius: 5px;
 }
 
 .img-1 img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .4s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
 }
+
 .img-1:hover img {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 /*-------------------- portfolio section end -------------*/
 
 
 /*-------------------- Qualification section start -------*/
-.qualification-section{
+.qualification-section {
     height: 1000px;
     background-color: #F9FAFB;
 }
-.qualification-heading h1{
+
+.qualification-heading h1 {
     color: #DF5646;
     font-size: 35px;
     text-align: center;
@@ -444,80 +518,75 @@ header .btn{
     padding-top: 80px;
     padding-bottom: 100px;
 }
-.qualification-row{
+
+.qualification-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.qualification-row h2{
+
+.qualification-row h2 {
     font-size: 28px;
     font-weight: 500;
     margin-left: 50px;
     color: #1D2043;
 }
-.my-education{
+
+.my-education {
     padding-top: 25px;
 }
-.my-education{
+
+.my-education {
     display: grid;
     grid-template-columns: 120px 20px 380px;
 }
-.education-p p{
+
+.education-p p {
     font-size: 14px;
-    padding-top: 40px ;
-    color: rgba(0,0,0,0.6);
+    padding-top: 40px;
+    color: rgba(0, 0, 0, 0.6);
 }
-.education-hr{
+
+.education-hr {
     height: 260px;
     width: 1px;
     background-color: #e0d8d8;
 }
-.education-h5-h4-p h5{
+
+.education-h5-h4-p h5 {
     font-size: 18px;
     color: #DF5646;
     padding-top: 35px;
     font-weight: 500;
 }
-.education-h5-h4-p .behance-color{
+
+.education-h5-h4-p .behance-color {
     color: #1f44ff;
 }
-.education-h5-h4-p .dribble-color{
+
+.education-h5-h4-p .dribble-color {
     color: #f012be;
 }
-.education-h5-h4-p h4{
+
+.education-h5-h4-p h4 {
     font-size: 20px;
     color: #1D2043;
     font-weight: 400;
     padding-top: 5px;
     padding-bottom: 10px;
 }
-.education-h5-h4-p p{
+
+.education-h5-h4-p p {
     font-size: 15px;
-    color: #78ADD9 ;
+    color: #78ADD9;
     font-weight: 400;
     padding-bottom: 30px;
-    
+
 }
-.education-h5-h4-p small{
+
+.education-h5-h4-p small {
     font-size: 14px;
-    color: rgba(0,0,0,0.6);
-    
+    color: rgba(0, 0, 0, 0.6);
+
 }
 
 /*-------------------- Qualification section end ---------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

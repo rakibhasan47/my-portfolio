@@ -1,6 +1,6 @@
 
 // header nav sticky
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     header.classList.toggle('sticky', window.scrollY > 0);
 });
@@ -22,7 +22,11 @@ closeBtn.addEventListener("click", () => {
 
 
 
+// dark btutton
 
+// document.getElementById('dark-btn').addEventListener('click', function () {
+//     document.body.style.backgroundColor = 'goldenrod';
+// })
 
 
 
